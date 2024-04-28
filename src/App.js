@@ -1,23 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import NavBar from "./componnets/NavBar";
+import HeroSection from "./componnets/HeroSection";
+import ContentSection from "./componnets/ContentSection";
+import Footer from "./componnets/Footer";
+import "./App.css"; // Make sure you create an App.css file to style your components
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <HeroSection />
+      <ContentSection />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
